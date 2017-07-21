@@ -5,7 +5,7 @@ const {Todo} = require('./../server/models/todo');
 const {User} = require('./../server/models/user');
 
 // var id = '5970c4c0c2b6b74106edc0cb';
-var userID = '596c326ee93356951c93f435'
+
 // if(! ObjectID.isValid(id)){
 //     console.log('ID not valid');
 // }
@@ -31,6 +31,8 @@ var userID = '596c326ee93356951c93f435'
 //     }
 //     console.log('Todo by serch id: ', todo)
 // }).catch((err) => console.log(err));
+
+var userID = '596c326ee93356951c93f435'
 
 User.findById(userID).then((user) => {
     if(!user){
